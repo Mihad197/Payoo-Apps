@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" data-theme="light">
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Payoo</title>
+    <title>Payoo | Login</title>
     <link rel="shotcut-icon" href="/assets/Logo-full.png">
+    <!-- tailwind -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        font-family: "Outfit", sans-serif;
+    }
+</style>
 </head>
-<body>
-<script src="/home.html"></script>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <header class="border-b-2 border-gray-300">
+    <section class="w-11/12 mx-auto py-3 flex justify-between items-center"> 
+    <div class="right flex gap-1">
+        <div class="logo w-[60px]">
+            <img src="/assets/logo.png" alt="">
+        </div>
+        <div class="blance-info">
+            <h2 class="text-2xl font-bold">$<span id="blance">45000</span></h2>
+            <p class="text-neutral/50">Avilable Blance</p>
+        </div>
+    </div>
+    <div class="left">
+        <a href="/index.html" class="btn btn-soft">Logout</a>
+    </div>
+    </section>
+    </header>
+   <script src="/js/login.js"></script>
 </body>
 </html>
